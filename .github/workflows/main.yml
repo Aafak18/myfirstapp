@@ -40,4 +40,5 @@ jobs:
         run: CI=false yarn build
         
       - name: deploying on surge
-        run: surge ./build http://sharp5589.surge.sh/ --token 5c4097e1b6a293f261640b767b350939
+        run: surge ./build http://sharp5589.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+        #5c4097e1b6a293f261640b767b350939
