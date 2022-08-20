@@ -1,16 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import Dine from './new.js';
+import {Message} from './message.js';
 
-function App() {
+export default function App() {
+  
+  let [count, setCount] = useState(0)
+  let [isMor, setMor] = useState(false)
+  
   return (
-    <div className="App">
-      <h1>Hello there. How are you now. </h1>
-      <Dine dishName=" Pizza" sweetDish="Kheer"/>
-      <Dine dishName=" Karahi" sweetDish="Custard"/>
-      <Dine dishName=" Nihari" sweetDish="Mithai"/>
+    <div className={`box ${isMor? 'dayLight': ''}`} >
+      <h1>Day time = {isMor? 'Morning' : 'Night' }</h1>
+      <Message counter={count}/>
+      <br/>
+      <button onClick={()=> setCount(++count)}> Update counter </button>
+      <button onClick={()=> setMor(!isMor)}>Change Daytime </button>
     </div>
   );
 }
 
-export default App;
+// export default App;

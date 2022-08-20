@@ -1,4 +1,16 @@
-.App {
+.box {
+  height: 500px;
+  background-color: rgb(225, 104, 104);
+}
+
+.dayLight { 
+  background-color: yellow;
+}
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +47,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
