@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function dine(){
+function Dine(){
     return(
         <div>
             <h1>How is this working.</h1>
@@ -9,4 +9,4 @@ function dine(){
         </div>
     )
 }
-export default dine;
+export default Dine;
