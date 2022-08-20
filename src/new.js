@@ -1,11 +1,12 @@
 import React from 'react';
 
 
-function Dine(){
+function Dine(props){
     return(
         <div>
-            <h1>How is this working.</h1>
-            <h1>How is this working now.</h1>
+            <h1>We are having {props.dishName}</h1>
+            <h2>And for the sweet we are having {props.sweetDish}</h2>
+            <p>Though we do not like sweets</p>
         </div>
     )
 }
